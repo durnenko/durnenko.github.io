@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.gm-control-active img{box-sizing:content-box;pointer-events:none}.gm-control-active:hover img:nth-child(1),.gm-control-active:active img:nth-child(1),.gm-control-active:active img:nth-child(2){display:none}
+</style>
+<link type="text/css" rel="stylesheet" href="style/css"><style type="text/css">.gm-ui-hover-effect{opacity:.7}.gm-ui-hover-effect:hover{opacity:1}
+</style>
+<style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px;box-sizing:border-box}
+</style>
+<style type="text/css">
+@media print {  
+  .gm-style .gmnoprint, .gmnoprint {
+    display:none;
+  }
+}
+@media screen {  
+  .gm-style .gmnoscreen, .gmnoscreen {    
+    display:none;
+  }
+}
+</style>
+<style type="text/css">.dismissButton{background-color:#fff;border:1px solid #dadce0;color:#1a73e8;border-radius:4px;font-family:Roboto,sans-serif;font-size:14px;height:36px;cursor:pointer;padding:0 24px}.dismissButton:hover{background-color:rgba(66,133,244,0.04);border:1px solid #d2e3fc}.dismissButton:focus{background-color:rgba(66,133,244,0.12);border:1px solid #d2e3fc;outline:0}.dismissButton:hover:focus{background-color:rgba(66,133,244,0.16);border:1px solid #d2e2fd}.dismissButton:active{background-color:rgba(66,133,244,0.16);border:1px solid #d2e2fd;box-shadow:0 1px 2px 0 rgba(60,64,67,0.3),0 1px 3px 1px rgba(60,64,67,0.15)}.dismissButton:disabled{background-color:#fff;border:1px solid #f1f3f4;color:#3c4043}
+</style>
+<style type="text/css">.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+</style>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hello! I am Evhen Hrechukhin</title>
+<link href="style/bootstrap.min.css" rel="stylesheet">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link href="style/css(1)" rel="stylesheet" type="text/css">
+<link href="style/style.css" rel="stylesheet" type="text/css">
+<link href="style/theme-custom.css" rel="stylesheet">
+<link href="style/font-awesome.min.css" rel="stylesheet">
+<link href="style/jquery.simpleCaptcha.css" rel="stylesheet">
+<link href="style/magnific-popup.css" rel="stylesheet">
+</head>
+<body class="dark-page">
+  <div class="page-loader" style="display: none;">
+    <div class="v-align-center">
+      <div class="middle-content">
+        <div class="img-p-area"> <img src="img/profile-thumb.jpg" alt="" class="img-thumbnail no-radius"></div>
+        <span class="itsme">Hello!</span>
+        <h4>Evhen Hrechukhin</h4>
+        <p>please wait</p>
+        <div class="anim-pg">
+          <span></span>
+        </div>
+        <div class="force-pg"><button type="button" id="force-close-pg" class="btn">Skip This →</button></div>
+      </div>
+    </div>
+  </div>
+  <div class="body-area">
+    <header class="main-header">
+      <div class="nav-main">
+        <span class="itsme">Hello! </span>
+        <a href="ru.html" class="link-work">RU</i></a>
+        <a href="#menu-ovefly" class="toogle-overfly"><i class="fa fa-bars open-t"></i> <i class="fa fa-times close-t"></i></a>
+        <a href="#share-ovefly" class="toogle-overfly"><i class="fa fa-plus open-t"></i> <i class="fa fa-times close-t"></i></a>
+      </div>
+      <div class="over-fly-area" id="menu-ovefly">
+        <div class="inner-overfly">
+          <div class="middle-overfly">
+            <h2 class="title-over">Menu</h2>
+            <nav class="main-nav" id="menu">
+              <ul class="nav">
+                <li class=""><a href="#aboutme" class="inner-link" data-text="About Me"><span>About Me</span></a></li>
+                <li class=""><a href="#resume" class="inner-link" data-text="My Resume"><span>Resume</span></a></li>
+                <li class="active"><a href="#portfolio" class="inner-link" data-text="My Portfolio"><span>Portfolio</span></a></li>
+                <li class=""><a href="#blog" class="inner-link" data-text="Blog"><span>Blog</span></a></li>
+                <li class=""><a href="#recent" class="inner-link" data-text="Recent clients"><span>Recent clients</span></a></li>
+                <li class=""><a href="#services" class="inner-link" data-text="Services"><span>Services</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="over-fly-area" id="search-ovefly">
+        <div class="inner-overfly">
+          <div class="middle-overfly">
+            <h2 class="title-over">Find My Articles</h2>
+            <form class="from-search">
+              <div class="form-group">
+                <input type="search" name="s" class="form-control input-lg input-search" placeholder="Input Text Here !">
+              </div>
+              <div class="form-group">
+                <button class="btn btnc2"><span>Search</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="over-fly-area" id="share-ovefly">
+        <div class="inner-overfly">
+          <div class="middle-overfly">
+            <h2 class="title-over">Share This Page</h2>
+            <div class="social-share">
+              <a href="https://plus.google.com/share?url=http://www.yourwebsite.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Google Plus"><i class="fa fa-google-plus"></i></a>
+              <a href="http://pinterest.com/pin/create/button/?url=http://www.yourwebsite.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Pinterest"><i class="fa fa-pinterest"></i></a>
+              <a href="http://www.facebook.com/share.php?u=http://www.yourwebsite.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="http://twitter.com/home?status=http://www.yourwebsite.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-01">
+        <div class="hero-border">
+          <div class="top"></div>
+          <div class="bottom"></div>
+          <div class="left"></div>
+          <div class="right">
+            <div class="v-area">
+              <div class="v-middle  show-span">
+                <div class="p5" id="label-menu">
+                  <span style="opacity: 1;">M</span>
+                  <span style="opacity: 1;">y</span>
+                  <span style="opacity: 1;"> </span>
+                  <span style="opacity: 1;">P</span>
+                  <span style="opacity: 1;">o</span>
+                  <span style="opacity: 1;">r</span>
+                  <span style="opacity: 1;">t</span>
+                  <span style="opacity: 1;">f</span>
+                  <span style="opacity: 1;">o</span>
+                  <span style="opacity: 1;">l</span>
+                  <span style="opacity: 1;">i</span>
+                  <span style="opacity: 1;">o</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my-thumb">
+          <div class="thumb-top">
+            <a href="img/pic1.jpg" class="image-popup" title="This is Me.">
+              <img src="img/profile-thumb.jpg" class="img-thumbnail no-radius" alt=""></a>
+            </div>
+          </div>
+          <div class="content-hero">
+            <div class="v-content">
+              <span class="itsme">Hello! </span>
+              <h4 class="font-normal">My Name is</h4>
+              <h1 class="myname">Evhen Hrechukhin</h1>
+              <h3 class="font-normal with-line">Web Developer &amp; Seo specialist From Ukraine</h3>
+              <p><a href="form.html" class="btn btnc1 link-work"><span>Hire Me</span></a> <a href="#" class="btn btnc1"><span>Download Resume</span></a></p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content-body">
+        <section id="aboutme">
+          <div class="section-padd bg2">
+            <div class="container-body clearfix">
+              <div class="big-qoute">
+                <h3>Start where you are. Use what you have. Do what you can. <small>→ Evhen Hrechukhin</small></h3>
+              </div>
+            </div>
+          </div>
+          <div class="section-padd top-bold-border">
+            <div class="container-body clearfix">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="img-pr">
+                    <a href="/img/pic2.jpg" class="image-popup" title="This is Me.">
+                      <img src="img/profile.jpg" alt="">
+                    </a>
+                  </div>
+                  <h2 class="title"><span>Hello There</span></h2>
+                  <p>I discovered my passion for design when I was a sophomore in High School; It was then when it became clear what I wanted to do for a living. I pursued my career at the amazing Valencia College where I started my major in Print Design. A year later I took a begginer’s Web class, where I discovered the love for code. After that, I switched my major to Interactive Design and started the never-ending journey of becoming a web developer along with sharpening my eye for design.</p>
+                  <p>In 2013 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Ut enim ad minim veniam, quis nostrud exercitation quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix br-t">
+            <div class="col-md-6 col-sm-6 no-padding">
+              <div class="desc-mini no-br-l">
+                <div class="mid-desc-mini">
+                  <h3>Web Developer</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 no-padding">
+              <div class="desc-mini">
+                <div class="mid-desc-mini">
+                  <h3>Seo specialist</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg2 p30 br-b">
+            <div class="container-body clearfix">
+              <div class="clearfix br-t br-r ">
+                <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
+                  <div class="desc-mini">
+                    <div class="mid-desc-mini">
+                      <h4>Birthdate</h4>
+                      <p>05/03/1990</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
+                  <div class="desc-mini">
+                    <div class="mid-desc-mini">
+                      <h4>Telegram</h4>
+                      <p><a href="tg:+38 (096) 404 58 40">+38 (096) 404 58 40</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
+                  <div class="desc-mini">
+                    <div class="mid-desc-mini">
+                      <h4>Phone </h4>
+                      <p><a href="tel:+38 (096) 404 58 40">+38 (096) 404 58 40</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
+                  <div class="desc-mini">
+                    <div class="mid-desc-mini">
+                      <h4>Email</h4>
+                      <p><a href="mailto:hrechukhin@gmail.com">hrechukhin@gmail.com</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
+                  <div class="desc-mini">
+                    <div class="mid-desc-mini">
+                      <h4>Website</h4>
+                      <p> <a href="https://hrechukhin.github.io">hrechukhin.github.io</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
+                  <div class="desc-mini">
+                    <div class="mid-desc-mini">
+                      <h4>Address </h4>
+                      <p>Kharkiv, Ukraine</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="resume">
+          <div class="section-padd">
+            <div class="container-body clearfix">
+              <h2 class="title"><span>Education</span></h2>
+              <div class="white-space-10"></div>
+              <ul class="resume-list"> 
+                <li> 
+                  <h4><i class="fa fa-calendar ic-re"></i> 2007-2013</h4>
+                  <i>Specialist Degree</i>
+                  <h3><i class="fa fa-building-o ic-re"></i>Kharkiv National Institute of Construction and Architecture</h3>
+                  <p>Heat supply and exploitation of secondary heat energy resources</p>
+                </li>
+              </ul>
+              <h2 class="title"><span>Employement</span></h2>
+              <div class="white-space-10"></div>
+              <ul class="resume-list"> 
+                <li> 
+                  <h4><i class="fa fa-calendar ic-re"></i>May 2017 - November 2017</h4>
+                  <a href="https://pinofran.com/"><i>Pinofran</i></a>
+                  <h3><i class="fa fa-building-o ic-re"></i> Web developer</h3>
+                  <p>Development of landing page and corporate sites on CMS Wordpress & OpenCart</p>
+                  <p>Using technology: Javascript / jQuery / SaSS / Bootstrap / PHP / MySQL / BEM / Git</p>
+                </li>
+                <li> 
+                  <h4><i class="fa fa-calendar ic-re"></i>November 2017 - Untill now</h4>
+                  <p><a href="https://joseartgallery.com">Jose Art Gallery</a> / <a href="https://seomustang.com">Seo Mustang</a></p>
+                  <h3><i class="fa fa-building-o ic-re"></i> Front-end developer / Seo specialist</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </li>
+              </ul>
+              <h2 class="title"><span>Skills</span></h2>
+              <div class="row">
+                <div class="col-md-6">
+                  <h3 class="title-2">Web Developer</h3>
+                  <ul class="list-unstyled list-progress">
+                    <li>
+                      <h4>Javascript  <small>60%</small></h4>
+                      <div class="progress-line">
+                        <div class="line" data-holdwidth="60%" style="width: 80%;"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <h4>CSS3   <small>90%</small></h4>
+                      <div class="progress-line">
+                        <div class="line" data-holdwidth="90%" style="width: 60%;"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <h4>HTML5   <small>90%</small></h4>
+                      <div class="progress-line">
+                        <div class="line" data-holdwidth="90%" style="width: 70%;"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h3 class="title-2">Seo optimization</h3>
+                  <ul class="list-unstyled list-progress">
+                    <li>
+                      <h4><span>Seo check-list</span>  <small>100%</small></h4>
+                      <div class="progress-line">
+                        <div class="line" data-holdwidth="100%" style="width: 80%;"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <h4>Schema.org  <small>80%</small></h4>
+                      <div class="progress-line">
+                        <div class="line" data-holdwidth="80%" style="width: 60%;"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <h4>Link building  <small>80%</small></h4>
+                      <div class="progress-line">
+                        <div class="line" data-holdwidth="80%" style="width: 70%;"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <h3 class="title-2">Soft Skills</h3>
+              <div class="clearfix text-center">
+                <div class="col-md-3 col-sm-6 col-xs-6  no-padding">
+                  <div class="mb30">
+                    <div class="chart" data-percent="87"><span class="percent">87</span><canvas height="90" width="90"></canvas></div>
+                    <h4>Creative   </h4>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6  col-xs-6 no-padding">
+                  <div class="mb30">
+                    <div class="chart" data-percent="73"><span class="percent">73</span><canvas height="90" width="90"></canvas></div>
+                    <h4>Leadership   </h4>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6  no-padding">
+                  <div class="mb30">
+                    <div class="chart" data-percent="80"><span class="percent">80</span><canvas height="90" width="90"></canvas></div>
+                    <h4>Communication </h4>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 no-padding">
+                  <div class="mb30">
+                    <div class="chart" data-percent="90"><span class="percent">90</span><canvas height="90" width="90"></canvas></div>
+                    <h4>Confident </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="portfolio">
+          <div class="section-padd br-t bg2">
+            <div class="container-body clearfix">
+              <h2 class="title dark"><span>My Works</span></h2>
+              <ul class="list-inline list-filter-galery">
+                <li data-filter="*" class="active"><a href="#">All</a></li>
+                <li data-filter=".gal" class=""><a href="#">Web development</a></li>
+                <li data-filter=".vid" class=""><a href="#">Seo optimization</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="galery-box clearfix bg2" style="position: relative; height: 164.547px;">
+            <div class="col-sm-3 col-xs-6 item-box img" style="position: absolute; left: 0px; top: 0px; display: none;">
+              <div class="hover-area">
+                <div class="text-vcenter-area">
+                  <div class="text-vcenter">
+                    <h3><a href="work.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                  </div>  
+                </div>
+              </div>
+              <img src="img/1.jpg" alt="">
+            </div>
+            <div class="col-sm-3 col-xs-6 item-box gal" style="position: absolute; left: 0px; top: 0px; display: none;">
+              <div class="hover-area">
+                <div class="text-vcenter-area">
+                  <div class="text-vcenter">
+                    <h3><a href="work.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                  </div>  
+                </div>
+              </div>
+              <div id="bs-gslider1" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="img/2.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/3.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-6 item-box vid" style="position: absolute; left: 0px; top: 0px;">
+              <div class="hover-area">
+                <div class="text-vcenter-area">
+                  <div class="text-vcenter">
+                    <h3><a href="work.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                  </div>  
+                </div>
+              </div>
+              <img src="img/4.jpg" alt="">
+            </div>
+            <div class="col-sm-3 col-xs-6 item-box vid" style="position: absolute; left: 230px; top: 0px;">
+              <div class="hover-area">
+                <div class="text-vcenter-area">
+                  <div class="text-vcenter">
+                    <h3><a href="work.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                  </div>  
+                </div>
+              </div>
+              <img src="img/5.jpg" alt="">
+            </div>
+            <div class="col-sm-3 col-xs-6 item-box img" style="position: absolute; left: 230px; top: 0px; display: none;">
+              <div class="hover-area">
+                <div class="text-vcenter-area">
+                  <div class="text-vcenter">
+                    <h3><a href="work.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                  </div>  
+                </div>
+              </div>
+              <img src="img/6.jpg" alt="">
+            </div>
+            <div class="col-sm-3 col-xs-6 item-box img" style="position: absolute; left: 460px; top: 0px; display: none;">
+              <div class="hover-area">
+                <div class="text-vcenter-area">
+                  <div class="text-vcenter">
+                    <h3><a href="work.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                  </div>
+                </div>
+              </div>
+              <img src="img/7.jpg" alt="">
+            </div>
+            <div class="col-sm-3 col-xs-6 item-box gal" style="position: absolute; left: 230px; top: 0px; display: none;">
+              <div class="hover-area">
+                <div class="text-vcenter-area">
+                  <div class="text-vcenter">
+                    <h3><a href="work.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                  </div>  
+                </div>
+              </div>
+              <div id="bs-gslider2" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4010">
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="img/8.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/9.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-6 item-box img" style="position: absolute; left: 691px; top: 0px; display: none;">
+              <div class="hover-area">
+                <div class="text-vcenter-area">
+                  <div class="text-vcenter">
+                    <h3><a href="work.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                  </div>  
+                </div>
+              </div>
+              <img src="img/10.jpg" alt="">
+            </div>
+            <div class="col-sm-3 col-xs-6 item-box vid" style="position: absolute; left: 460px; top: 0px;">
+              <div class="hover-area">
+                <div class="text-vcenter-area">
+                  <div class="text-vcenter">
+                    <h3><a href="work.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                  </div>  
+                </div>
+              </div>
+              <img src="img/11.jpg" alt="">
+            </div>
+            <div class="col-sm-3 col-xs-6 item-box gal" style="position: absolute; left: 460px; top: 0px; display: none;">
+              <div class="hover-area">
+                <div class="text-vcenter-area">
+                  <div class="text-vcenter">
+                    <h3><a href="work.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                  </div>  
+                </div>
+              </div>
+              <div id="bs-gslider3" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3010">
+                <div class="carousel-inner" role="listbox">
+                  <div class="item">
+                    <img src="img/12.jpg" alt="">
+                  </div>
+                  <div class="item active">
+                    <img src="img/13.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-6 item-box img" style="position: absolute; left: 0px; top: 164px; display: none;">
+              <div class="hover-area">
+                <div class="text-vcenter-area">
+                  <div class="text-vcenter">
+                    <h3><a href="work.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                  </div>
+                </div>
+              </div>
+              <img src="img/14.jpg" alt="">
+            </div>
+            <div class="col-sm-3 col-xs-6 item-box vid" style="position: absolute; left: 691px; top: 0px;">
+              <div class="hover-area">
+                <div class="text-vcenter-area">
+                  <div class="text-vcenter">
+                    <h3><a href="work.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                  </div>
+                </div>
+              </div>
+              <img src="img/15.jpg" alt="">
+            </div>
+          </div>
+          <div class="section-padd br-b bg2" id="blog">
+            <div class="container-body clearfix">
+              <h2 class="title dark"><span>Blog</span></h2>
+              <div class="white-space-10"></div>
+              <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                  <div class="team-box">
+                    <img src="img/10(1).jpg" alt="">
+                    <h4>Jhoanes Yuneuz</h4>
+                    <p><a href="work.html" class="link-work">Programmer</a></p>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                  <div class="team-box">
+                    <img src="img/11(1).jpg" alt="">
+                    <h4>Rose Luxyu</h4>
+                    <p><a href="#">Programmer</a></p>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                  <div class="team-box">
+                    <img src="img/12(1).jpg" alt="">
+                    <h4>Eric Sukarto</h4>
+                    <p><a href="#">Programmer</a></p>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                  <div class="team-box">
+                    <img src="img/13(1).jpg" alt="">
+                    <h4>Andred Grick</h4>
+                    <p><a href="#">Programmer</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-padd" id="recent">
+            <div class="container-body clearfix"> 
+              <h2 class="title"><span>Recent Clients</span></h2>
+              <div class="white-space-10"></div>
+              <ul class="list-inline text-center list-force-img clearfix">
+                <li><a href="#"><img src="img/1.png" alt=""></a></li>
+                <li><a href="#"><img src="img/2.png" alt=""></a></li>
+                <li><a href="#"><img src="img/3.png" alt=""></a></li>
+                <li><a href="#"><img src="img/4.png" alt=""></a></li>
+                <li><a href="#"><img src="img/5.png" alt=""></a></li>
+              </ul> 
+              <h2 class="title"><span>Testimonial</span></h2>
+              <div class="white-space-10"></div>
+              <ul class="list-unstyled list-testimonial clearfix">
+                <li>
+                  <img src="img/1(1).jpg" alt="" class="img-thumbnail img-circle">
+                  <div class="text-testimonial">
+                    <h3>No One Only You 
+                      <small class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-empty"></i>
+                        <span>(4.5/5)</span>
+                      </small>
+                    </h3>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean commodo ligula eget dolor. Phasellus viverra nulla ut metus varius laoreet.
+                    <h4>Margaret Lubt - <small>Founder  <a href="#"><i class="fa fa-globe"></i> www.website.com</a></small></h4>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/2(1).jpg" alt="" class="img-thumbnail img-circle">
+                  <div class="text-testimonial">
+                    <h3>Amazing Team
+                      <small class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-empty"></i>
+                        <span>(4.5/5)</span>
+                      </small>
+                    </h3>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean commodo ligula eget dolor. Phasellus viverra nulla ut metus varius laoreet.
+                    <h4>Tony Struck - <small>Founder  <a href="dark_index.html#"><i class="fa fa-globe"></i> www.website.com</a></small></h4>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/3(1).jpg" alt="" class="img-thumbnail img-circle">
+                  <div class="text-testimonial">
+                    <h3>Good Job Guys
+                      <small class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-empty"></i>
+                        <span>(4.5/5)</span>
+                      </small>
+                    </h3>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean commodo ligula eget dolor. Phasellus viverra nulla ut metus varius laoreet.
+                    <h4>Geisha Rose - <small>Founder  <a href="dark_index.html#"><i class="fa fa-globe"></i> www.website.com</a></small></h4>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="section-padd br-t br-b bg2" id="services">
+            <div class="container-body clearfix">
+              <h2 class="title dark"><span>Services</span></h2>
+              <div class="white-space-10"></div>
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <div class="box-service">
+                    <div class="ic"><i class="fa fa-pencil "></i></div>
+                    <h3>Seo optimization</h3>
+                    <ul>
+                      <li>Planing</li>
+                      <li>Design</li>
+                      <li>Develop</li>
+                      <li>Deploy Product</li>
+                    </ul>
+                    <div class="price">$130$-$900</div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="box-service">
+                    <div class="ic"><i class="fa fa-desktop "></i></div>
+                    <h3>Web Apps</h3>
+                    <ul>
+                      <li>Planing</li>
+                      <li>Design</li>
+                      <li>Develop</li>
+                      <li>Deploy Product</li>
+                    </ul>
+                    <div class="price">$2050-$3600</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="clearfix br-t">
+            <div class="col-md-3 col-xs-6 no-padding">
+              <div class="desc-mini no-br-l">
+                <div class="mid-desc-mini">
+                  <h3><a href="dark_index.html#" class="black-link" target="_blank">&nbsp;<i class="fa fa-facebook"></i> &nbsp;</a></h3>
+                  <p><a href="dark_index.html#" class="black-link" target="_blank">Facebook</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-6 no-padding">
+              <div class="desc-mini">
+                <div class="mid-desc-mini">
+                  <h3><a href="#" class="black-link" target="_blank">&nbsp;<i class="fa fa-instagram"></i> &nbsp;</a></h3>
+                  <p><a href="#" class="black-link" target="_blank">Instagram</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-6 no-padding">
+              <div class="desc-mini">
+                <div class="mid-desc-mini">
+                  <h3><a href="#" class="black-link" target="_blank">&nbsp;<i class="fa fa-twitter"></i>&nbsp;</a></h3>
+                  <p><a href="#" class="black-link" target="_blank">Twitter</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-6 no-padding">
+              <div class="desc-mini">
+                <div class="mid-desc-mini">
+                  <h3><a href="#" class="black-link" target="_blank">&nbsp;<i class="fa fa-linkedin"></i>&nbsp;</a></h3>
+                  <p><a href="#" class="black-link" target="_blank">Linkedin</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="main-footer">
+        © 2018 Hello! I am Evhen Hrechukhin
+      </footer>
+    </div>
+    <div class="over-fly-area" id="load-works">
+      <div class="inner-overfly" id="work-wait-msg">
+        <div class="middle-overfly">
+          <h2 class="title-over">PLASE WAIT...</h2>
+        </div>
+      </div>
+      <div class="work-close"><a href="#" class="close-panel-work btn btn-xs btn-default">Close</a></div>
+      <div id="load-work-html"></div>
+    </div>
+    <div class="modal fade" id="modal-example" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title" id="myModalLabel">Extra Pages</h4>
+          </div>
+          <div class="modal-body">
+            <ul class="list-boxpage">
+              <li><a href="dark_blog-list-posts.html" class="open-link">Blog List Post</a></li>
+              <li><a href="itsme/dark_blog-single-post.html" class="open-link">Blog Single Post</a></li>
+              <li><a href="http://yobithemes.com/demo/html/itsme/dark_404.html" class="open-link">404 error</a></li>
+              <li><a href="http://yobithemes.com/demo/html/itsme/dark_cooming-soon.html" class="open-link">Cooming Soon</a></li>
+              <li><a href="http://yobithemes.com/demo/html/itsme/dark_theme-element.html" class="open-link">Theme Element</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://use.fontawesome.com/0af9e97522.js"></script>
+    <script src="script/SimpleAjaxUploader.min.js"></script>
+    <script src="script/jquery.min.js"></script>
+    <script src="script/jquery.easing-1.3.pack.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/jquery.easypiechart.min.js"></script>
+    <script src="script/isotope.pkgd.min.js"></script>
+    <script src="script/jquery.magnific-popup.min.js"></script>
+    <div style="display: block; position: absolute; overflow: hidden; margin: 0px; padding: 0px; opacity: 0; direction: ltr; z-index: 2147483583;">
+      <input type="file" name="fileatt" style="position: absolute; right: 0px; margin: 0px; padding: 0px; font-size: 480px; font-family: sans-serif; cursor: pointer;">
+    </div>
+  </body>
+  </html>
