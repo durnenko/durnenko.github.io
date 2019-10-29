@@ -1,2 +1,2 @@
-# hrechukhinevhen.github.io
+# durnenko_maxim.github.io
 Resume
